@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ADatePicker: typeof import('ant-design-vue/es')['DatePicker']
     ADropdownButton: typeof import('ant-design-vue/es')['DropdownButton']
     AMenu: typeof import('ant-design-vue/es')['Menu']
     AMenuItem: typeof import('ant-design-vue/es')['MenuItem']

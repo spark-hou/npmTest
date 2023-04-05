@@ -2,11 +2,12 @@
   <div class='about'>
     <h1>This is an about page</h1>
     <testBtn></testBtn>
+    <br>
+    <testAA/>
   </div>
 </template>
 
 <script setup>
-import testBtn from '../../packages/components/testBtn/index.vue'
 
 </script>
 
