@@ -4,7 +4,7 @@
 * @Description:
 */
 <template>
-  <a-date-picker v-model:value="val" />
+  <a-date-picker v-model:value="val" placeholder="吼吼吼的自定义"/>
 </template>
 
 <script>

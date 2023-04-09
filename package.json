@@ -1,7 +1,7 @@
 {
-  "name": "aux-component",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@saprk-hou/test",
+  "private": false,
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -16,9 +16,6 @@
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
-  },
-  "peerDependencies": {
-
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
@@ -37,5 +34,23 @@
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.1.4",
     "vue-tsc": "^1.2.0"
+  },
+  "files": [
+    "lib/*",
+    "packages/*",
+    "README.md",
+    "package.json"
+  ],
+  "main": "./lib/aux-component.umd.js",
+  "module": "./lib/aux-component.mjs",
+  "exports": {
+    ".": {
+      "import": "./lib/aux-component.mjs",
+      "require": "./lib/aux-component.umd.js"
+    },
+    "./lib/style.css": "./lib/style.css"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
